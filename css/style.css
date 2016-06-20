@@ -1,0 +1,426 @@
+/******************** MAIN CSS (MOBILE) *********************/
+
+/********************** GLOBAL SETTINGS *******************/
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+/******************** NAVIGATION **************************/
+
+nav {
+    background-color: #46866E;
+    border-bottom: 2px solid #913121;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 .75em;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.active {
+    color: #913121;
+    text-shadow: 0 0 10px #fff;
+}
+
+/******************** HEADER ******************************/
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+    padding: 5em 2em 8em 2em;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    font-size: 2.5em;
+    margin-top: 14vh;
+}
+
+header h2 {
+    color: #fff;
+    line-height: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+#header-first {
+    color: #46866E;
+    text-shadow: 0 0 10px #913121;
+}
+
+#header-second {
+    color: #fff;
+    text-shadow: 0 0 10px #913121;
+}
+
+.down {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 10px #913121;
+}
+
+/************************** MENU *************************/
+
+#menu {
+    background-color: #fff;
+    padding: 4em 2em 4em 2em;
+    text-align: center;
+}
+
+#menu h1 {
+    color: #46866E;
+    font-size: 2em;
+    font-family: 'Oswald', 'Lato', sans-serif;
+}
+
+#menu h2 {
+    color: #46866E;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: .8em;
+}
+
+#menu p {
+    line-height: 1.75em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+#menu ul li {
+    list-style: none;
+    line-height: 2.5em;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#toppinggroup {
+    margin-top: 1em;
+}
+
+.foodpic {
+    border-radius: 100%;
+    border: 8px solid #913121;
+    display: block;
+    margin: 0 auto 2em auto;
+    width: 220px;
+    max-width: 100%;
+}
+
+.meats,
+.veggies,
+.rice,
+.toppings {
+    background-color: #46866E;
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.meats p,
+.veggies p,
+.rice p,
+.toppings li {
+    font-size: 1.3em;
+}
+
+.toppings {
+    padding-top: 1em;
+}
+
+#meathide,
+#veggiehide,
+#ricehide,
+#toppinghide {
+    display: none;
+}
+
+#meathide,
+#veggiehide,
+#ricehide,
+#toppinghide,
+#meatshow,
+#veggieshow,
+#riceshow,
+#toppingshow {
+    color: #913121;
+}
+
+/************************** HOURS *************************/
+
+#hours {
+    background-color: #46866E;
+    color: #fff;
+    padding: 4em 2em 3em 2em;
+    text-align: center;
+}
+
+#hours h1 {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    margin-bottom: .8em;
+}
+
+#hours ul {
+    margin-bottom: 1em;
+}
+
+#hours ul li {
+    list-style: none;
+    margin: 1em;
+}
+
+/************************** CONTACT *************************/
+
+#contact {
+    background-color: #fff;
+    padding: 4em 2em 4em 2em;
+    text-align: center;
+}
+
+#contact h1 {
+    color: #46866E;
+    font-size: 2em;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    margin-bottom: .2em;
+}
+
+#contact h2 {
+    color: #46866E;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: .8em;
+}
+
+#contact p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+#contact a {
+    color: #913121;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+#map {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+#map-overlay {
+    background-color: rgba(0,0,0,.8);
+    max-width: 400px;
+    height: 302px;
+    margin: -338px auto 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#map-overlay h2 {
+    padding-top: 5.5em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#map-overlay h2 a {
+    color: #46866E;
+}
+
+.hide {
+    display: none;
+}
+
+/**************************** FOOTER **************************/
+
+footer {
+    background-color: #000;
+    padding: 4em 2em 2em 2em;
+    text-align: center;
+}
+
+footer h2 {
+    color: #fff;
+    font-family: 'Oswald', 'Lato', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer hr {
+    color: #fff;
+    margin: 3em auto 2em auto;
+}
+
+footer a {
+    color: #46866E;
+    font-size: 2em;
+    padding: 0 .5em 0 .5em;
+    transition: .5s ease-in-out;
+}
+
+footer a:hover {
+    color: #913121;
+    text-shadow: 0 0 10px #fff;
+}
+
+/************************** OVER 500px *************************/
+
+@media only screen and (min-width: 500px) {
+    
+    /********************* NAV 500px *********************/
+    
+    nav {
+        font-size: 1.2em;
+    }
+    
+    nav ul li {
+        padding: 0 1em;
+    }
+    
+    /******************** HEADER 500px *******************/
+    
+    header h1 {
+        font-size: 3.5em;
+    }
+    
+    header h2 {
+        font-size: 1.5em;
+    }
+    
+    /********************* MENU 500px ********************/
+    
+    #menu {
+        font-size: 1.2em;
+    }
+    
+    .foodpic {
+        width: 280px;
+        max-width: 100%;
+    }
+    
+    /********************* HOURS 500px ********************/
+    
+    #hours {
+        font-size: 1.2em;
+    }
+    
+    #hours ul li {
+        list-style: none;
+    }
+    
+    /********************* CONTACT 500px ********************/
+    
+    #contact {
+        font-size: 1.2em;
+    }
+    
+    #map-overlay {
+        height: 301px;
+        margin: -345px auto 0 auto;
+    }
+    
+    #map-overlay h2 {
+        padding-top: 4.5em;
+    }
+
+    /********************* FOOTER 500px *********************/
+    
+    footer {
+        font-size: 1.2em;
+    }
+    
+    footer hr {
+        width: 70%;
+    }
+    
+}
+
+/************************** OVER 750px *************************/
+
+@media only screen and (min-width: 750px) {
+ 
+    /****************** ALL SECTIONS 750px ****************/
+    
+    header,
+    #menu,
+    #hours,
+    #contact,
+    footer {
+        font-size: 1.25em;
+    }
+    
+    /********************* NAV 750px ***********************/
+    
+    nav ul li {
+        padding: 0 2em;
+    }
+    
+    /********************* MENU 750px ***********************/
+    
+    .meats,
+    .veggies,
+    .rice {
+        padding-bottom: 0;
+    }
+    
+    /********************* CONTACT 750px *******************/
+    
+    #contact #map-overlay {
+        display: none;
+    }
+    
+}
+
+/************************* OVER 1080px ************************/
+
+@media only screen and (min-width: 1080px) {
+    
+    /********************* NAV 1080px ***********************/
+    
+    nav ul li {
+        padding: 0 3em;
+    }
+}

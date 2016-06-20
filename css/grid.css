@@ -1,0 +1,49 @@
+/********************* SECTION SETUP *********************/
+
+.section {	clear: both; padding: 0px; margin: 0px;  }
+
+/********************* COLUMN SETUP *********************/
+
+.col:first-child {  margin-left: 0;  }
+
+/********************* GROUPING SETUP *********************/
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/***************** START WITH MOBILE DISPLAY, ALL COLS FULL WIDTH ***************/
+    
+.col {  margin: 0;  }
+
+.span_3_of_3, .span_2_of_3, .span_1_of_3 {  width: 100%;  }
+
+.span_1_of_2, .span_2_of_2 {  width: 100%;  }
+
+/************************ TWO COLUMN DISPLAY AT 750PX ******************************/
+
+@media only screen and (min-width: 750px) {
+
+    /*  GRID OF TWO  */
+    .span_2_of_2 {  width: 100%;  }
+    .span_1_of_2 {  width: 49.2%;  }
+    
+    /* ADD COL MARGIN */
+    .col {
+        display: block;
+        float:left;
+        margin: 0 0 0 1.6%;
+    }
+
+}
+
+/*************************** THREE COLUMN DISPLAY AT 1080PX **************************/
+
+@media only screen and (min-width: 1080px) {
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+    
+}
